@@ -1,0 +1,542 @@
+.editorBox-box {
+  height: 230px;
+  width : 385px;
+
+  position: relative;
+
+  .editorBox-container {
+
+    .text-container {
+      margin: 10px;
+
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-between;
+      align-items    : center;
+
+      p {
+        color      : #fff;
+        font-weight: 500;
+        font-size  : 24px;
+        line-height: 29px;
+
+        &.subtitle {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .content-container {
+      height: 170px;
+
+      position: relative;
+
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      display        : flex;
+      flex-direction : row;
+      flex-wrap      : wrap;
+
+      margin: 0 10px 10px 10px;
+
+      padding-right: 10px;
+
+      .left-half {
+        width: 48.6%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        overflow: hidden;
+
+        div {
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &.images {
+          width: 67%;
+        }
+      }
+
+      .right-half {
+        width: 48.6%;
+
+        display        : flex;
+        flex-direction : row;
+        flex-wrap      : wrap;
+        overflow: hidden;
+
+        div {
+          margin-bottom: 10px;
+          padding      : 0;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &.colors {
+          width: 30%;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        width: 5px;
+
+        &-track {
+          background-color: #212121;
+        }
+
+        &-thumb {
+          background-color: #2b4bca;
+        }
+      }
+
+      .image-container {
+        height: 150px;
+        width : 120px;
+
+        position: relative;
+
+        margin-bottom: 5px;
+        margin-right: 5px;
+
+        img {
+          max-width : 120px;
+          max-height: 150px;
+
+          position: absolute;
+          bottom  : 0;
+        }
+
+        &.active,
+        &:hover {
+          .image-container-background {
+            fill: rgba(168, 186, 255, 0.6);
+
+            transition: .5s ease;
+
+            .path {
+              filter: drop-shadow(0 0 5px #a8baff);
+              stroke: rgba(168, 186, 255, 0.4);
+            }
+          }
+
+        }
+
+        .image-container-background {
+          fill      : rgba(26, 26, 26, 0.6);
+          transition: .5s ease;
+
+          .path {
+            stroke        : #212121;
+            stroke-opacity: 0.4;
+            stroke-width  : 2;
+          }
+        }
+      }
+
+      .color-container {
+        width : 50px;
+        height: 50px;
+
+        margin-bottom: 5px;
+        margin-right: 5px;
+
+        cursor    : pointer;
+        box-sizing: border-box;
+
+        &.color-0 {
+          background-color: #1c1f21;
+        }
+
+        &.color-1 {
+          background-color: #272a2c;
+        }
+
+        &.color-2 {
+          background-color: #312e2c;
+        }
+
+        &.color-3 {
+          background-color: #35261c;
+        }
+
+        &.color-4 {
+          background-color: #4b321f;
+        }
+
+        &.color-5 {
+          background-color: #5c3b24;
+        }
+
+        &.color-6 {
+          background-color: #6d4c35;
+        }
+
+        &.color-7 {
+          background-color: #6b503b;
+        }
+
+        &.color-8 {
+          background-color: #765c45;
+        }
+
+        &.color-9 {
+          background-color: #7f684e;
+        }
+
+        &.color-10 {
+          background-color: #99815d;
+        }
+
+        &.color-11 {
+          background-color: #a79369;
+        }
+
+        &.color-12 {
+          background-color: #af9c70;
+        }
+
+        &.color-13 {
+          background-color: #bba063;
+        }
+
+        &.color-14 {
+          background-color: #d6b97b;
+        }
+
+        &.color-15 {
+          background-color: #dac38e;
+        }
+
+        &.color-16 {
+          background-color: #9f7f59;
+        }
+
+        &.color-17 {
+          background-color: #845039;
+        }
+
+        &.color-18 {
+          background-color: #682b1f;
+        }
+
+        &.color-19 {
+          background-color: #61120c;
+        }
+
+        &.color-20 {
+          background-color: #640f0a;
+        }
+
+        &.color-21 {
+          background-color: #7c140f;
+        }
+
+        &.color-22 {
+          background-color: #a02e19;
+        }
+
+        &.color-23 {
+          background-color: #b64b28;
+        }
+
+        &.color-24 {
+          background-color: #a2502f;
+        }
+
+        &.color-25 {
+          background-color: #aa4e2b;
+        }
+
+        &.color-26 {
+          background-color: #626262;
+        }
+
+        &.color-27 {
+          background-color: #808080;
+        }
+
+        &.color-28 {
+          background-color: #aaaaaa;
+        }
+
+        &.color-29 {
+          background-color: #c5c5c5;
+        }
+
+        &.color-30 {
+          background-color: #463955;
+        }
+
+        &.color-31 {
+          background-color: #5a3f6b;
+        }
+
+        &.color-32 {
+          background-color: #763c76;
+        }
+
+        &.color-33 {
+          background-color: #ed74e3;
+        }
+
+        &.color-34 {
+          background-color: #eb4b93;
+        }
+
+        &.color-35 {
+          background-color: #f299bc;
+        }
+
+        &.color-36 {
+          background-color: #04959e;
+        }
+
+        &.color-37 {
+          background-color: #025f86;
+        }
+
+        &.color-38 {
+          background-color: #023974;
+        }
+
+        &.color-39 {
+          background-color: #3fa16a;
+        }
+
+        &.color-40 {
+          background-color: #217c61;
+        }
+
+        &.color-41 {
+          background-color: #185c55;
+        }
+
+        &.color-42 {
+          background-color: #b6c034;
+        }
+
+        &.color-43 {
+          background-color: #70a90b;
+        }
+
+        &.color-44 {
+          background-color: #439d13;
+        }
+
+        &.color-45 {
+          background-color: #dcb857;
+        }
+
+        &.color-46 {
+          background-color: #e5b103;
+        }
+
+        &.color-47 {
+          background-color: #e69102;
+        }
+
+        &.color-48 {
+          background-color: #f28831;
+        }
+
+        &.color-49 {
+          background-color: #fb8057;
+        }
+
+        &.color-50 {
+          background-color: #e28b58;
+        }
+
+        &.color-51 {
+          background-color: #d1593c;
+        }
+
+        &.color-52 {
+          background-color: #ce3120;
+        }
+
+        &.color-53 {
+          background-color: #ad0903;
+        }
+
+        &.color-54 {
+          background-color: #880302;
+        }
+
+        &.color-55 {
+          background-color: #1f1814;
+        }
+
+        &.color-56 {
+          background-color: #291f19;
+        }
+
+        &.color-57 {
+          background-color: #2e221b;
+        }
+
+        &.color-58 {
+          background-color: #37291e;
+        }
+
+        &.color-59 {
+          background-color: #2e2218;
+        }
+
+        &.color-60 {
+          background-color: #231b15;
+        }
+
+        &.color-61 {
+          background-color: #020202;
+        }
+
+        &.color-62 {
+          background-color: #706c66;
+        }
+
+        &.color-63 {
+          background-color: #9d7a50;
+        }
+      }
+
+      .half-image-container {
+        width : 110px;
+        height: 110px;
+
+        background: rgba(26, 26, 26, 0.6);
+        border    : 1px solid rgba(33, 33, 33, 0.4);
+
+        &.active,
+        &:hover {
+          background: rgba(168, 186, 255, 0.6);
+          border    : 2px solid rgba(168, 186, 255, 0.4);
+          box-shadow: 0px 0px 5px #A8BAFF;
+
+          cursor: pointer;
+        }
+      }
+
+      .number-container {
+        width : 46px;
+        height: 46px;
+
+        margin-bottom: 5px;
+        margin-right: 5px;
+
+        position: relative;
+
+        background: rgba(26, 26, 26, 0.6);
+        border    : 2px solid rgba(33, 33, 33, 0.4);
+
+        cursor: pointer;
+
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        margin: 0px 5px 5px 0;
+
+        .number {
+          font-weight: 600;
+          font-size  : 24px;
+          line-height: 29px;
+
+          color: #fff;
+        }
+
+        &.active,
+        &:hover {
+          background: rgba(168, 186, 255, 0.6);
+          border    : 2px solid rgba(168, 186, 255, 0.4);
+          box-shadow: 0px 0px 5px #A8BAFF;
+        }
+      }
+    }
+  }
+
+  &.full-images {
+    height: 367px;
+    width : 543px;
+
+    .content-container {
+      height: 308px;
+      width : 513px;
+    }
+  }
+
+  .editorBox-background-svg {
+    position: absolute;
+
+    z-index: -10;
+    top    : 0;
+    left   : 0;
+    fill   : rgba(48, 81, 211, 0.6);
+
+    .path {
+      stroke      : #3051D3;
+      stroke-width: 2;
+    }
+  }
+
+  .range-input-container {
+    width     : 100%;
+    height: 40px;
+
+    margin-bottom: 20px;
+
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+
+    .text {
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-between;
+      align-items    : center;
+
+      .title,
+      .subtitle {
+        font-weight: 500;
+        font-size  : 18px;
+        line-height: 22px;
+
+        color: white;
+      }
+    }
+
+    .slider {
+      -webkit-appearance: none !important;
+      background        : #212121;
+      height            : 5px;
+      width             : 100%;
+      outline           : none;
+      // overflow: hidden;
+
+      &::-webkit-slider-thumb {
+        height: 20px;
+        width : 20px;
+
+        border-radius: 50%;
+
+        appearance: none;
+
+        cursor: ew-resize;
+
+        background     : url("https://i.ibb.co/KhCNnsY/pointer-of-slider.png") no-repeat center center;
+        background-size: 150%;
+
+        border    : 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
